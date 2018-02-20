@@ -47,7 +47,7 @@ namespace WindowsFormsApp1
         rnd = random.Next(0, QuotesList.Count);
         if (QuotesNumbs.Count == QuotesList.Count - 1)
         {
-          QuotesText.Text = "Sorry, no more quotes (you did read all 1640 of them, right?)";
+          QuotesText.Text = "Sorry, no more quotes (you did read all " + QuotesList.Count.ToString() +" of them, right?)";
           generateButt.Text = "Restart";
           continue;
         }
